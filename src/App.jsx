@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchHomeData = async () => {
       try {
-        const response = await axios.get("https://backend.coloniapp.com/admin/dashboard/home");
+        const response = await axios.get("https://node-practice-ten.vercel.app/auth/home");
         setHomeData(response.data.data);  // Store API response in state
         console.log("first", response.data.data);  // Store API response in state
       } catch (err) {
